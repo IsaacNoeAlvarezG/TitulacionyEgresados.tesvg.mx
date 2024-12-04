@@ -1,0 +1,115 @@
+/* Estilos para el fondo futurista */
+body {
+    background: linear-gradient(135deg, #141e30, #243b55);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor de mensajes flotantes */
+.floating-message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 217, 255, 0.9);
+    color: #fff;
+    padding: 10px 100px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 217, 255, 0.5);
+    font-size: 16px;
+    animation: fadeOut 5s forwards; /* Desaparece después de 5 segundos */
+}
+
+/* Animación para desaparecer el mensaje */
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Contenedor del formulario */
+form {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Estilos para los campos de entrada */
+input[type="text"], input[type="password"]  {
+    width: 90%; /* Mantiene el ancho igual */
+    padding: 12px;
+    margin: 15px 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Efecto hover en los campos de entrada */
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #00d9ff;
+    box-shadow: 0px 0px 8px 0px #00d9ff;
+    outline: none;
+}
+
+/* Botón de envío */
+button {
+    background-color: #00d9ff;
+    border: none;
+    padding: 12px 20px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 90%; /* Igualar ancho con las cajas de texto */
+    margin: 15px 0; /* Añadir margen para alinear con los campos */
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Efecto hover en el botón */
+button:hover {
+    background-color: #00a6c6;
+    box-shadow: 0px 4px 10px rgba(0, 217, 255, 0.3);
+}
+
+
+
+/* Estilo para el mensaje emergente de éxito */
+.mensaje {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50; /* Verde para éxito */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    z-index: 1000;
+}
+
+/* Estilo para el mensaje emergente de error */
+.mensaje-error {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #f44336; /* Rojo para error */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    z-index: 1000;
+}
