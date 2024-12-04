@@ -1,5 +1,1 @@
-Redirigete al sistema:
-
-	<a href="index.php">
-		<button type="button">Redirígete al Sistema Completo</button>
-	</a>
+[Redirígete al Sistema Completo](https://isaacnoealvarezg.github.io/TitulacionyEgresados.tesvg.mx/Login_system/login.php)
